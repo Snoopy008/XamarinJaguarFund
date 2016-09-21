@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFCustomerPage"
+		Title = "客户列表">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+					iOS="0, 0, 0, 0"
+					Android="10, 0"
+					WinPhone="10, 0" />
+	</ContentPage.Padding>
+	<StackLayout>
+		<ScrollView Orientation = "Vertical" VerticalOptions="StartAndExpand">
+			<StackLayout Orientation = "Vertical">
+				<SearchBar x:Name="searchBar"
+						Placeholder="Search text"
+						TextChanged="OnSearchBarTextChanged"
+						SearchButtonPressed="OnSearchBarButtonPressed" 
+						HeightRequest = "40"
+						VerticalOptions = "Start"
+						HorizontalOptions = "FillAndExpand"
+						/>
+				
+				
+				<ListView x:Name = "customerListView"
+					SeparatorVisibility = "None"
+						ItemSelected = "customerListViewItemSelected">
+				<ListView.RowHeight>
+					 <OnPlatform x:TypeArguments="x:Int32"
+								iOS="80"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame OutlineColor = "Accent"
+										Padding = "5">
+									<StackLayout Orientation = "Vertical">
+											<Label Text = "{Binding name}"
+												FontSize = "18"
+												TextColor = "Black"
+												HorizontalOptions = "StartAndExpand"/>
+
+										<StackLayout Orientation = "Horizontal">
+											<Label Text = "客户类别"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "StartAndExpand"/>
+
+											<Label Text = "{Binding customerType}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "StartAndExpand"/>
+
+											<Label Text = "投资产品(个)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "StartAndExpand"/>
+											<Label Text = "{Binding investProductCount}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "StartAndExpand"/>
+										</StackLayout>
+
+										<StackLayout Orientation = "Horizontal">
+											<Label Text = "投资份额(份)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "StartAndExpand"/>
+
+											<Label Text = "{Binding investShareTotal}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "StartAndExpand"/>
+
+											<Label Text = "投资金额(元)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "StartAndExpand"/>
+											<Label Text = "{Binding investShareAmountTotal}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "StartAndExpand"/>
+										</StackLayout>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<Button Text = "refresh"
+				HeightRequest = "40"
+				BackgroundColor = "Red"
+				VerticalOptions = "End"/>
+			</StackLayout>
+		</ScrollView>
+	</StackLayout>
+</ContentPage>

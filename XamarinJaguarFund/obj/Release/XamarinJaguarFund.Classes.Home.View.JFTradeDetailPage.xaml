@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFTradeDetailPage"
+		Title = "交易详情">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+					iOS="0, 0, 0, 0"
+					Android="10, 0"
+					WinPhone="10, 0" />
+	</ContentPage.Padding>
+	<StackLayout Orientation = "Vertical">
+		<ScrollView>
+			<StackLayout Orientation = "Vertical">
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "客户姓名"
+							FontSize = "18"
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "clientNameLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "客户类别"
+							FontSize = "18"
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "clientTypeLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "TA代码"
+							FontSize = "18"							
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "TaCodeLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "联系电话"
+							FontSize = "18"	
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "mobileLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "证件类型"
+							FontSize = "18"		
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "pidTypeLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "证件号码"
+							FontSize = "18"						
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "pidNumberLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "联系地址"
+							FontSize = "18"						
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "addressLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "基金名称"
+							FontSize = "18"						
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "fundNameLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "基金编号"
+							FontSize = "18"						
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "fundNumberLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "合同编号"
+							FontSize = "18"		
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "contractNumberLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "交易类型"
+							FontSize = "18"		
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "tradeTypeLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "交易时净值"
+							FontSize = "18"				
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "TradeNetValueLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "当前净值"
+							FontSize = "18"					
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "currentNetValueLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "交易份额"
+							FontSize = "18"				
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "tradeShareLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "交易金额"
+							FontSize = "18"				
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "tradeAmountLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "开户银行"
+							FontSize = "18"				
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "bankNameLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+				
+				<StackLayout Orientation = "Horizontal" Padding = "20,10,20,10">
+					<Label Text = "银行账号"
+							FontSize = "18"			
+							VerticalOptions = "CenterAndExpand"/>
+					<Label x:Name = "bankAccountLab"
+							FontSize = "16"
+							HorizontalOptions = "EndAndExpand"
+							VerticalOptions = "CenterAndExpand"/>
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFTradeListPage"
+		Title="所有交易列表">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+					iOS="0, 0, 0, 0"
+					Android="10, 0"
+					WinPhone="10, 0" />
+	</ContentPage.Padding>
+	<StackLayout>
+		<ScrollView Orientation = "Vertical" VerticalOptions="StartAndExpand">
+			<StackLayout Orientation = "Vertical">
+				<SearchBar x:Name="searchBar"
+						Placeholder="Search text"
+						TextChanged="OnSearchBarTextChanged"
+						SearchButtonPressed="OnSearchBarButtonPressed" 
+						HeightRequest = "40"
+						VerticalOptions = "Start"
+						HorizontalOptions = "FillAndExpand"
+						/>
+				
+				
+				<ListView x:Name = "tradeListView"
+					SeparatorVisibility = "None"
+					VerticalOptions = "FillAndExpand"
+					HeightRequest = "320"
+					ItemSelected = "tradeListViewItemSelected">
+				<ListView.RowHeight>
+					<OnPlatform x:TypeArguments="x:Int32"
+								iOS="90"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame Padding = "5">
+									<StackLayout Orientation = "Vertical">
+										<Label Text ="{Binding tradeDataInfo}"
+											TextColor = "Black"
+											FontSize = "15"
+											HorizontalOptions = "StartAndExpand"/>
+										
+										<StackLayout Orientation = "Horizontal">
+											<Label Text = "{Binding unitPriceView, StringFormat='单位净值：{0:S}元'}"
+												TextColor = "Gray"
+												FontSize = "13"
+												HorizontalOptions = "StartAndExpand"/>
+											<Label Text = "{Binding tradeAmount, StringFormat='总金额：{0:S}元'}"
+												TextColor = "Gray"
+												FontSize = "13"
+												HorizontalOptions = "EndAndExpand"/>
+										</StackLayout>
+
+										<Label Text = "{Binding tradeDate}"
+												TextColor = "Gray"
+												FontSize = "13"
+												HorizontalOptions = "StartAndExpand"/>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+			<Button Text = "refresh"
+				HeightRequest = "40"
+				BackgroundColor = "Red"
+				VerticalOptions = "End"/>
+			</StackLayout>
+		</ScrollView>
+	</StackLayout>
+</ContentPage>

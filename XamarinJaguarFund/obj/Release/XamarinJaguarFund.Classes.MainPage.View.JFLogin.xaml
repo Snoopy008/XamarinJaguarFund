@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinJaguarFund.JFLogin">
+	<ContentPage.Content>
+		<StackLayout Orientation = "Vertical"
+				VerticalOptions = "StartAndExpand">
+			<StackLayout Orientation = "Vertical"
+					HeightRequest = "100">
+			</StackLayout>
+			<Image	Source = "LOGO.png" 
+					WidthRequest = "100"
+					HeightRequest = "100"
+					HorizontalOptions = "Center"
+					VerticalOptions = "CenterAndExpand"/>
+
+			<StackLayout Orientation = "Vertical"
+					HeightRequest = "30">
+			</StackLayout>
+
+			<StackLayout Orientation = "Horizontal"
+						HeightRequest = "30"
+						VerticalOptions = "StartAndExpand"
+						Padding = "20,5,20,5">
+				<Label x:Name = "account"
+						Text = "账号"
+						VerticalOptions = "CenterAndExpand"/>
+				<Entry x:Name = "acconutField"
+						VerticalOptions = "CenterAndExpand"
+						HorizontalOptions = "FillAndExpand"/>
+			</StackLayout>	
+
+
+			<StackLayout Orientation = "Horizontal"
+						HeightRequest = "30"
+						VerticalOptions = "StartAndExpand"
+						Padding = "20,5,20,5">
+				<Label x:Name = "password"
+						Text = "密码"
+						VerticalOptions = "CenterAndExpand"/>
+				<Entry x:Name = "passwordField"
+						VerticalOptions = "CenterAndExpand"
+						HorizontalOptions = "FillAndExpand"/>
+			</StackLayout>	
+
+
+			<StackLayout Orientation = "Vertical"
+					HeightRequest = "20">
+			</StackLayout>
+
+			<Button x:Name = "login"
+					Text = "登录"
+					TextColor = "White"
+					BackgroundColor = "#dd4b39"
+					WidthRequest = "280"
+					HeightRequest = "30"
+					HorizontalOptions = "Center"
+					Clicked = "popClicked"
+					VerticalOptions = "EndAndExpand"/>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFCurrentNetValueListPage">
+	<StackLayout Orientation = "Vertical">
+		<ListView x:Name = "netValueHistroyListView"
+					SeparatorVisibility = "None"
+					VerticalOptions = "FillAndExpand"
+					ItemSelected = "netValueHistroyListViewItemSelected">
+				<ListView.RowHeight>
+					<OnPlatform x:TypeArguments="x:Int32"
+								iOS="55"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame Padding = "5">
+									<StackLayout Orientation = "Horizontal">
+										<Label Text = "{Binding productName}"
+											TextColor = "Black"
+											FontSize = "15"
+											HorizontalOptions = "CenterAndExpand"
+											VerticalOptions = "CenterAndExpand"
+											WidthRequest = "100"/>
+										
+										<StackLayout Orientation = "Vertical" VerticalOptions = "CenterAndExpand">
+											<Label Text = "{Binding latestMarketPrice, StringFormat='单位净值：{0:S}元'}"
+												TextColor = "Black"
+												FontSize = "13"/>
+											<Label Text = "{Binding latestAccumulativeMarketPrice, StringFormat='累计净值：{0:S}元'}"
+												TextColor = "Black"
+												FontSize = "13"/>
+										</StackLayout>
+
+										<Label Text = "{Binding latestMarketDate}"
+												TextColor = "Gray"
+												FontSize = "12"
+												HorizontalOptions = "End"
+												VerticalOptions = "CenterAndExpand"/>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+		</StackLayout>
+</ContentPage>

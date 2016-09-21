@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFHomePage"
+		Title = "首页">
+	<ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+		<StackLayout Orientation = "Vertical" VerticalOptions = "StartAndExpand">
+			<ListView x:Name = "tradeHistroyListView"
+					SeparatorVisibility = "None"
+					IsGroupingEnabled= "true"
+					VerticalOptions = "Start">
+				<ListView.Header>
+					<StackLayout Orientation = "Horizontal">
+						<Label Text = "1234"
+							TextColor = "Black"
+							FontSize = "18"
+							HorizontalOptions = "Start"/>
+
+						<Button Text = "more"
+								TextColor = "Red"
+								FontSize = "18"
+								HorizontalOptions = "End"/>
+					</StackLayout>
+				</ListView.Header>
+				<ListView.RowHeight>
+					<OnPlatform x:TypeArguments="x:Int32"
+								iOS="80"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame Padding = "5">
+									<StackLayout Orientation = "Vertical">
+										<Label Text = "1234"
+											TextColor = "Black"
+											FontSize = "18"
+											HorizontalOptions = "Start"/>
+										
+										<StackLayout Orientation = "Horizontal">
+											<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"
+												HorizontalOptions = "Start"/>
+											<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"
+												HorizontalOptions = "End"/>
+										</StackLayout>
+
+										<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"
+												HorizontalOptions = "End"/>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+
+
+
+			<ListView x:Name = "netValueHistroyListView"
+					SeparatorVisibility = "None"
+					IsGroupingEnabled= "true"
+					VerticalOptions = "Start">
+				<ListView.Header>
+					<StackLayout Orientation = "Horizontal">
+						<Label Text = "1234"
+							TextColor = "Black"
+							FontSize = "18"
+							HorizontalOptions = "Start"/>
+
+						<Button Text = "more"
+								TextColor = "Red"
+								FontSize = "18"
+								HorizontalOptions = "End"/>
+					</StackLayout>
+				</ListView.Header>
+				<ListView.RowHeight>
+					<OnPlatform x:TypeArguments="x:Int32"
+								iOS="80"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame Padding = "5">
+									<StackLayout Orientation = "Horizontal">
+										<Label Text = "1234"
+											TextColor = "Black"
+											FontSize = "18"
+											HorizontalOptions = "Start"/>
+										
+										<StackLayout Orientation = "Vertical">
+											<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"/>
+											<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"/>
+										</StackLayout>
+
+										<Label Text = "1234"
+												TextColor = "Black"
+												FontSize = "18"
+												HorizontalOptions = "End"/>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+
+
+			
+			<ListView x:Name = "remindMessageListView"
+					SeparatorVisibility = "None"
+					IsGroupingEnabled= "true"
+					VerticalOptions = "Start">
+				<ListView.Header>
+					<StackLayout Orientation = "Horizontal">
+						<Label Text = "1234"
+							TextColor = "Black"
+							FontSize = "18"
+							HorizontalOptions = "Start"/>
+
+						<Button Text = "more"
+								TextColor = "Red"
+								FontSize = "18"
+								HorizontalOptions = "End"/>
+					</StackLayout>
+				</ListView.Header>
+				<ListView.RowHeight>
+					<OnPlatform x:TypeArguments="x:Int32"
+								iOS="80"
+								Android="80"
+								WinPhone="90" />
+				</ListView.RowHeight>
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ContentView>
+								<Frame Padding = "5">
+									<StackLayout>
+										<Label Text = "1234"
+											TextColor = "Black"
+											FontSize = "18"
+											HorizontalOptions = "Start"/>
+									</StackLayout>
+								</Frame>
+							</ContentView>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>	
+			</ListView>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

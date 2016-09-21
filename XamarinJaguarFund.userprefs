@@ -1,0 +1,52 @@
+﻿<Properties StartupItem="iOS/XamarinJaguarFund.iOS.csproj" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinJaguarFund/Classes/Customer/View/JFCustomerInvestCell.cs">
+    <Files>
+      <File FileName="XamarinJaguarFund/Classes/Product/View/JFProductDetailPage.xaml.cs" Line="35" Column="23" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFCurrentNetValueListPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFCurrentNetValueListPage.xaml" Line="51" Column="3" />
+      <File FileName="XamarinJaguarFund/Classes/Product/View/JFProductDetailPage.xaml" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFHomePage.xaml.cs" Line="3" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFHomePage.xaml" Line="41" Column="47" />
+      <File FileName="XamarinJaguarFund/Classes/Product/Model/JFNetValueChartDatas.cs" Line="16" Column="16" />
+      <File FileName="XamarinJaguarFund/Classes/Product/Model/JFInvestCustomers.cs" Line="15" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="XamarinJaguarFund/packages.config" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/PublicClass/JFGobalData.cs" Line="10" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Product/View/JFNetValueHistoryCell.cs" Line="18" Column="54" />
+      <File FileName="XamarinJaguarFund/Classes/My/View/JFMyPage.xaml" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/MainPage/View/JFMainPage.cs" Line="12" Column="31" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFTradeDetailPage.xaml" Line="29" Column="37" />
+      <File FileName="XamarinJaguarFund/Classes/My/View/JFMyPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Home/View/JFTradeDetailPage.xaml.cs" Line="23" Column="4" />
+      <File FileName="Droid/MainActivity.cs" Line="23" Column="51" />
+      <File FileName="XamarinJaguarFund/Classes/Customer/Model/JFCustomers.cs" Line="1" Column="1" />
+      <File FileName="XamarinJaguarFund/Classes/Customer/View/JFCustomerInvestCell.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinJaguarFund" expanded="True">
+            <Node name="XamarinJaguarFund" expanded="True">
+              <Node name="Classes" expanded="True">
+                <Node name="Customer" expanded="True">
+                  <Node name="Model" expanded="True" />
+                  <Node name="View" expanded="True">
+                    <Node name="JFCustomerInvestCell.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="XamarinJaguarFund.Droid" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.XamarinJaguarFund.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XamarinJaguarFund.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.bb4c24bffc1dbab20d0a923102615c001e25d088" />
+</Properties>

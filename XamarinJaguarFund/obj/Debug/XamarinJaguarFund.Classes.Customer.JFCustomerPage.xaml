@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="XamarinJaguarFund.JFCustomerPage"
+		Title = "客户列表">
+	<!--<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+					iOS="0, 0, 0, 0"
+					Android="10, 0"
+					WinPhone="10, 0" />
+	</ContentPage.Padding>
+	<StackLayout Orientation = "Vertical">
+		<SearchBar x:Name="searchBar"
+				Placeholder="Search text"
+				TextChanged="OnSearchBarTextChanged"
+				SearchButtonPressed="OnSearchBarButtonPressed" 
+				HeightRequest = "40"
+				VerticalOptions = "Start"
+				HorizontalOptions = "FillAndExpand"
+				/>
+		
+		
+		<ListView x:Name = "productListView"
+			SeparatorVisibility = "None">
+		<ListView.RowHeight>
+			 <OnPlatform x:TypeArguments="x:Int32"
+						iOS="70"
+						Android="80"
+						WinPhone="90" />
+		</ListView.RowHeight>
+
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<ContentView>
+						<Frame OutlineColor = "Accent"
+								Padding = "5">
+							<StackLayout Orientation = "Horizontal">
+								<StackLayout Orientation = "Vertical"
+											 Padding = "0,10,0,10">
+									<Label Text = "{Binding latestNetValue}"
+										FontSize = "18"
+										TextColor = "Red"
+										HorizontalOptions = "CenterAndExpand"/>
+
+									<Label Text = "单位净值(元)"
+										FontSize = "12"
+										TextColor = "Gray"
+										HorizontalOptions = "CenterAndExpand"/>
+								</StackLayout>
+
+								<StackLayout Orientation = "Vertical">
+									<Label Text = "{Binding fundName}"
+										FontSize = "16"
+										TextColor = "Black"
+										HorizontalOptions = "CenterAndExpand"/>
+									<StackLayout Orientation = "Horizontal">
+										<StackLayout Orientation = "Vertical">
+											<Label Text = "{Binding fundCurrentOwnerNumber}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "CenterAndExpand"/>
+											<Label Text = "投资人数(人)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "CenterAndExpand"/>
+										</StackLayout>
+
+										<StackLayout Orientation = "Vertical">
+											<Label Text = "{Binding fundCurrentShare}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "CenterAndExpand"/>
+											<Label Text = "投资份额(份)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "CenterAndExpand"/>
+										</StackLayout>
+
+										<StackLayout Orientation = "Vertical">
+											<Label Text = "{Binding fundTotalAmount}"
+												FontSize = "12"
+												TextColor = "Black"
+												HorizontalOptions = "CenterAndExpand"/>
+											<Label Text = "投资金额(元)"
+												FontSize = "12"
+												TextColor = "Gray"
+												HorizontalOptions = "CenterAndExpand"/>
+										</StackLayout>
+									</StackLayout>
+								</StackLayout>
+							</StackLayout>
+						</Frame>
+					</ContentView>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+	</StackLayout>-->
+</ContentPage>
