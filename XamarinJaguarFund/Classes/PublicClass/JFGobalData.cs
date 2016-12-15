@@ -3,7 +3,7 @@ namespace XamarinJaguarFund
 {
 	public class JFGobalData
 	{
-		public static string baseUrl = "http://vsm.vilang.com";
+		public static string baseUrl = "";
 	}
 }
 
